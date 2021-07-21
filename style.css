@@ -1,0 +1,27 @@
+a, p{
+    font-size: 1.1em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 10%;
+}
+nav a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin-right: 25px
+}
+.banner h1{
+    font-size: 64px;
+}
+.banner-container{
+    display: flex;
+}
+.banner-item, .banner-image{
+    width: 50%;
+}
+.banner-image img{
+    max-width: 95%;
+}
