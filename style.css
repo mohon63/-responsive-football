@@ -10,6 +10,10 @@ a, p{
 a{
     text-decoration: none;
 }
+img {
+    height: 100%;
+    width: 100%;
+}
 /************************************************************
     01 - animation and keyframes css style
 *************************************************************/
@@ -91,8 +95,7 @@ nav li.cool-lin a:hover{
 }
 .cardcontainer img {
     animation: zoominoutsinglefeatured 5s infinite;
-    max-width: 90%;
-    
+        width: 100%;
 }
 .cardcontainer {
     width: 50%;
@@ -108,7 +111,9 @@ nav li.cool-lin a:hover{
     font-size: 68px;
     color: white;
 }
-
+.watch-live i {
+    padding-left: 10px;
+}
 .banner-container{
     display: flex;
     padding: 100px 0;
@@ -142,6 +147,7 @@ nav li.cool-lin a:hover{
     padding: 10px 20px;
     transition: 1.5s ease;
 }
+
 .watch-live:hover{
     background-color: black;
     transition: 1.5s ease;
@@ -169,5 +175,174 @@ nav li.cool-lin a:hover{
 }
 
 /************************************************************
-    03 - 
+    03 - All players details css
 *************************************************************/
+.player-info-card img{
+    width: 100%;
+}
+.player-details-area {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.container2{
+    width: 1050px;
+    margin: 70px auto;
+}
+.player-info-card p{
+    color: #6C6C6C;
+}
+.player-info-card {
+    padding: 15px;
+    box-shadow: 0px 0px 25px #d5d5d5;
+    transition: 1s;
+}
+.player-info-card:hover {
+    background: black;
+    box-shadow: 15px 15px 45px rgb(0 0 0);
+    color: white;
+    transition: 1s;
+}
+.player-info-card:hover .card-img {
+    transform: scale(1.1);
+    transition: 1s;
+}
+.card-img{
+    transition: 1s;
+}
+
+/************************************************************
+    04 - Highlights copa america css
+*************************************************************/
+.all-highlights-contet, .hightlights-img{
+    width: 50%;
+}
+.all-highlights {
+    display: flex;
+}
+
+
+.hightlights-img img {
+    width: 100%;
+}
+
+.all-highlights-contet h1 {
+    font-size: 3em;
+}
+
+.all-highlights-contet p {
+    color: #6C6C6C;
+    margin-bottom: 45px;
+}
+
+.match-img{
+    transition: 1s;
+}
+.hightlights-img:hover .match-img {
+    transform: scale(1.1);
+    transition: 1s;
+}
+section.highlights-copa-america {
+    margin: 100px 0;
+}
+/************************************************************
+    05 - Footer css
+*************************************************************/
+
+
+
+.footer {
+    height: 110px;
+    width: 483px;
+    margin: 0 auto;
+    text-align: center;
+}
+.socila-icon ul.list-inline {
+    display: flex;
+    justify-content: center;
+}
+
+.socila-icon li.list-inline-item {
+    list-style: none;
+}
+/* Social Media Colors */
+
+.bg-facebook {
+    background: #435f9f;
+    color: white;
+}
+
+.bg-facebook:hover,
+.bg-facebook:focus {
+    background: #344a7b;
+}
+
+.bg-twitter {
+    background: #00aaf0;
+    color: white;
+}
+
+.bg-twitter:hover,
+.bg-twitter:focus {
+    background: #0086bd;
+}
+
+.bg-gplus {
+    background: #e04b34;
+    color: white;
+}
+
+.bg-gplus:hover,
+.bg-gplus:focus {
+    background: #c3341e;
+}
+
+.bg-pinterest {
+    background: #ce1f21;
+    color: white;
+}
+
+.bg-pinterest:hover,
+.bg-pinterest:focus {
+    background: #a2181a;
+
+}
+
+.bg-instagram {
+    background: #8a3ab9;
+    color: white;
+}
+
+.bg-instagram:hover,
+.bg-instagram:focus {
+    background: #6d2e92;
+}
+
+.bg-linkedin {
+    background: #4875b4;
+    color: white;
+}
+
+.bg-linkedin:hover,
+.bg-linkedin:focus {
+    background: #395d90;
+}
+/* Social Widget */
+
+.socila-icon .list-inline a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 43px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.socila-icon .list-inline-item:not(:last-child) {
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.copyright-text {
+    padding: 10px 0;
+}
