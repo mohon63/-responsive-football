@@ -14,6 +14,9 @@ img {
     height: 100%;
     width: 100%;
 }
+ul{
+    padding: 0;
+}
 /************************************************************
     01 - animation and keyframes css style
 *************************************************************/
@@ -66,24 +69,30 @@ img {
  *
  */
 header{
-    padding-top: 55px;
+    padding-top: 30px;
 }
-nav{
+.banner nav ul{
     display: flex;
     justify-content: space-between;
 }
-nav li {
+nav ul li {
     list-style: none;
     margin-right: 25px;
     display: inline-block;
 }
-nav li a{
+ nav ul li a{
     color: white;
-    transition: .5s ease;
 }
-nav li.cool-lin a:hover{
+.banner ul li{
+    transition: .5s ease;
+    
+}
+.banner ul li:hover a{
     color: #E02C6D;
     transition: .5s ease;
+}
+.menu-bar{
+    display: none;
 }
 /**
  * navbar css end
@@ -243,7 +252,7 @@ nav li.cool-lin a:hover{
     transform: scale(1.1);
     transition: 1s;
 }
-section.highlights-copa-america {
+.highlights-copa-america {
     margin: 100px 0;
 }
 /************************************************************
@@ -345,4 +354,118 @@ section.highlights-copa-america {
 }
 .copyright-text {
     padding: 10px 0;
+}
+
+/************************************************************
+    06 - Responsive Website css
+*************************************************************/
+@media only screen and (max-width:688px) {
+
+    .container, .container2, .highlights-copa-america{
+        width: 100%;
+    }
+    .player-details-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player-info-card:hover .card-img {
+        transform: none;
+    }
+    .animatin-border-bottom{
+        display: none;
+    }
+    .banner nav ul {
+        margin: 0 20px;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .banner h1 {
+        font-size: 35px;
+    }
+    .banner-item, .banner-image {
+        margin: 0 20px;
+    }
+    .all-highlights-contet h1 {
+        font-size: 1.5em;
+    }
+    .all-highlights-contet, .hightlights-img {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 600px){
+    .player-details-area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .all-highlights-contet, .hightlights-img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-item, .cardcontainer {
+        width: 100%;
+    }
+    .all-highlights {
+        display: flex;
+        flex-direction: column;
+    }
+    .cardcontainer img {
+        animation: none;
+
+    }
+    .banner h1{
+        font-size: 36px;
+    }
+    .animation{
+        display: none;
+    }
+    .banner-container{
+        padding: 0 20px;
+    }
+    .banner-item, .cardcontainer {
+        margin-bottom: 60px;
+    }
+    .highlights-copa-america {
+        margin: 0;
+        padding: 0 20px;
+    }
+    .all-highlights-contet h1 {
+        font-size: 2em;
+    }
+    .footer {
+        width: 350px;
+    }
+}
+/* for tab screen  */
+@media only screen and (min-width:689px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .player-details-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .all-highlights-contet, .hightlights-img {
+        width: 100%;
+    }
+    .all-highlights-contet h1 {
+        font-size: 2em;
+    }
+    .all-highlights-contet, .hightlights-img {
+        padding: 0 0 0 20px;
+    }
+    .animation{
+        display: none;
+    }
+    .banner h1 {
+        font-size: 50px;
+    }
+    .banner-item {
+        padding-left: 20px;
+    }
+    header ul{
+        margin: 0 20px;
+    }
 }
